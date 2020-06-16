@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+<title>Schön Pince - Hajós</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inconsolata">
+<style>
+body, html {
+    height: 100%;
+    font-family: "Inconsolata", sans-serif;
+}
+.bgimg {
+    background-position: center;
+    background-size: cover;
+    background-image: url("./images/header.png");
+    min-height: 75%;
+}
+.menu {
+    display: none;
+}
+</style>
+<body>
+
+<!-- Links (sit on top) -->
+<div class="w3-top">
+  <div class="w3-row w3-padding w3-black">
+    <div class="w3-col s3">
+      <a href="#" class="w3-button w3-block w3-black">HOME</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#about" class="w3-button w3-block w3-black">RÓLUNK</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#menu" class="w3-button w3-block w3-black">VÁLASZTÉK</a>
+    </div>
+    <div class="w3-col s3">
+      <a href="#where" class="w3-button w3-block w3-black">HOL?</a>
+    </div>
+  </div>
+</div>
+
+<!-- Header with image -->
+<header class="bgimg w3-display-container w3-grayscale-min" id="home">
+  <div class="w3-display-bottomleft w3-center w3-padding-large w3-hide-small">
+    <span class="w3-tag">Nyitvatartás előzetes egyeztetés alapján</span>
+  </div>
+  <div class="w3-display-middle w3-center">
+    <span class="w3-text-white" style="font-size:90px"><br>SCHÖN PINCE</span>
+  </div>
+  <div class="w3-display-bottomright w3-center w3-padding-large">
+    <span class="w3-text-white">Hajósi Pincefalu, Présház utca</span>
+  </div>
+</header>
+
+<!-- Add a background color and large text to the whole page -->
+<div class="w3-sand w3-grayscale w3-large">
+
+<!-- About Container -->
+<div class="w3-container" id="about">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-64"><span class="w3-tag w3-wide">BORÁSZATUNKRÓL</span></h5>
+    <p style="text-align:justify">Családi borászatunk a Présház utca végén, a Minerbio Tér kellemes zöld környezetének szomszédságában található, a Hajósi Pincefaluban. Présházunk 30 méter hosszú kortalan pinceága optimális klímát biztosít borainknak, autentikus környezetet az ide látogatóknak.</p>
+    <p style="text-align:justify">Tizedik nemzedékeként most rajtunk a sor, hogy életben tartsuk nagyapáink örök eszméit:</p>
+    <div class="w3-panel w3-leftbar w3-light-grey">
+      <p style="text-align:justify"><i>"A szőlő nyugalom, ahol minden csepp verejték egy pohárka jó borhoz vezet.<br>A bor szenvedély, amelyben ott a tűz és az egészség.<br>A pince szentély, ahol megpihenhetünk egy percre, hogy elfeledjük a világ gondjait."</i></p>
+      <!--<p>Chef, Coffeeist and Owner: Liam Brown</p>-->
+    </div>
+    <img src="./images/kifli.jpg" style="width:100%;max-width:1000px" class="w3-margin-top">
+    <p><strong>Nyitvatartás</strong> Előzetes egyeztetés alapján</p>
+    <p><strong>Cím: </strong> Hajósi Pincefalu, Présház utca</p>
+  </div>
+</div>
+
+<!-- Menu Container -->
+<div class="w3-container" id="menu">
+  <div class="w3-content" style="max-width:700px">
+ 
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">A VÁLASZTÉK</span></h5>
+  
+    <div class="w3-row w3-center w3-card w3-padding">
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Eat');" id="myLink">
+        <div class="w3-col s6 tablink">Boraink</div>
+      </a>
+      <a href="javascript:void(0)" onclick="openMenu(event, 'Drinks');">
+        <div class="w3-col s6 tablink">Étkezési lehetőségek</div>
+      </a>
+    </div>
+
+    <div id="Eat" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Kövidinka</h5>
+      <p class="w3-text-grey" style="text-align:justify">Nagyapáink kedvence reduktívan erjesztve. Valakinek gyermekkori emlék, valakinek újdonság és van akinek a molyrágta mostoha hírek cáfolata.</p><br>
+    
+      <h5>Generosa</h5>
+      <p class="w3-text-grey" style="text-align:justify">Régi nemesítés, mely a közelmúltig jól titkolta létezését a világ előtt.. Nálunk a Kövidinka és a Cserszegi közötti lágy ám annál zamatosabb átmenet szerepét tölti be.</p><br>
+    
+      <h5>Cserszegi Fűszeres</h5>
+      <p class="w3-text-grey" style="text-align:justify">Jól ismert szereplő, aki illatával csábít és savaival oltja a szomjat. Fröccsként is kiváló választás egy meleg nyári napon az árnyékban üldögélve.</p><br>
+    
+      <h5>Hel'ó Kitti</h5>
+      <p class="w3-text-grey" style="text-align:justify">Évről évre a kedvenc rozénk kékfrankosból készítve, bár néha kicsit haragszik ránk. Vele kísérletezünk a legtöbbet.. volt ő már hagymahéj és eper árnyalatú, testesebb és vékonyabb is. A lelke mélyén mégis csak kedvelhet minket, minden évben nagyon finom.</p><br>
+  
+      <h5>Merlot</h5>
+      <p class="w3-text-grey" style="text-align:justify">Egy kis francia egyenesen egy hajósi alsópincéből. Fahrodós érlelés, kerek savak és erdei gyümölcsök.</p>
+      
+      <h5>Cabernet Sauvignon</h5>
+      <p class="w3-text-grey" style="text-align:justify">Illatában piros gyümölcsök, ízében a mikroxidáció miatt különleges aromák jelennek meg.</p>
+        
+      <h5>Kékfrankos</h5>
+      <p class="w3-text-grey" style="text-align:justify">Merész választás fiatalabb korában, de kellő idő elteltével igazi csoda.. nem meglepő, hogy a franciák között is népszerű volt amikor a nevét kapta.</p>
+        
+      <h5>D29</h5>
+      <p class="w3-text-grey" style="text-align:justify">Egy kicsit ez is, egy kicsit az is.. a titkát nem áruljuk el, csak azt, hogy nem érdemes lemaradni róla.. minden héten más arcát mutatja..</p>
+    </div>
+
+    <div id="Drinks" class="w3-container menu w3-padding-48 w3-card">
+      <h5>Reggelik</h5>
+      <p class="w3-text-grey" style="text-align:justify">Svédasztal (füstölt kolbász, füstölt sonka, főtt tojás, vaj, trappista sajt, lekvár, zsemle, kifli, tea, tej, kávé) vagy tojásrántotta.</p><br>
+    
+      <h5>Sváb asztal</h5>
+      <p class="w3-text-grey style="text-align:justify"">Kolbász, sonka és szalonna a szalonna zsírjában sütve tükörtojással, főtt burgonyával, zöldségekkel, friss kenyérrel és persze pincehideg fröccsel.</p><br>
+    
+      <h5>Pörköltek</h5>
+      <p class="w3-text-grey style="text-align:justify"">Pacal pörkölt vagy marhalábszár bőségesen, savanyúsággal, galuskával vagy kenyérrel, finom bor kíséretében.</p><br>
+        
+    </div>  
+    <img src="./images/tabla.jpg" style="width:100%;max-width:1000px;margin-top:32px;">
+  </div>
+</div>
+
+<!-- Contact/Area Container -->
+<div class="w3-container" id="where" style="padding-bottom:32px;">
+  <div class="w3-content" style="max-width:700px">
+    <h5 class="w3-center w3-padding-48"><span class="w3-tag w3-wide">HOL TALÁLSZ MINKET?</span></h5>
+    <p>...a Présház utca végén, a Minerbio Tér szomszédságában...</p>
+    <div id="googleMap" class="w3-sepia" style="width:100%;height:400px;"></div>
+    <p style="text-align:justify"><span class="w3-tag">TÁJÉKOZTATÓ JELLEGGEL!</span> Borkóstolók és borvacsorák bonyolítása mellett bortúrákat, csettegőzést is szevezünk, továbbá az elszállásolásban is szívesen segítséget nyújtunk. </p>
+    <p style="text-align:justify"><strong>Foglalj</strong> időpontot most, vagy érdeklődj a lehetőségeink után a +36 70/325-1841-es telefonszámon!</p>
+
+    <!-- <form action="/action_page.php" target="_blank">
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Név" required name="Name"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Létszám" required name="People"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Dátum és idő" required name="date" value="2017-11-16T20:00"></p>
+      <p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Üzenet \ különleges kívánságok" required name="Message"></p>
+      <p><button class="w3-button w3-black" type="submit">ÜZENET ELKÜLDÉSE</button></p>
+    </form> -->
+  </div>
+</div>
+
+<!-- End page content -->
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-light-grey w3-padding-48 w3-large">
+  <p><a href="https://www.w3schools.com/w3css/default.asp" title="W3.CSS" target="_blank" class="w3-hover-text-green"></a></p>
+</footer>
+
+<!-- Add Google Maps -->
+<script>
+function myMap()
+{
+  myCenter=new google.maps.LatLng(46.386131, 19.145333);
+  var mapOptions= {
+    center:myCenter,
+    zoom:8, scrollwheel: false, draggable: false,
+    mapTypeId:google.maps.MapTypeId.ROADMAP
+  };
+  var map=new google.maps.Map(document.getElementById("googleMap"),mapOptions);
+
+  var marker = new google.maps.Marker({
+    position: myCenter,
+  });
+  marker.setMap(map);
+}
+
+// Tabbed Menu
+function openMenu(evt, menuName) {
+  var i, x, tablinks;
+  x = document.getElementsByClassName("menu");
+  for (i = 0; i < x.length; i++) {
+     x[i].style.display = "none";
+  }
+  tablinks = document.getElementsByClassName("tablink");
+  for (i = 0; i < x.length; i++) {
+     tablinks[i].className = tablinks[i].className.replace(" w3-dark-grey", "");
+  }
+  document.getElementById(menuName).style.display = "block";
+  evt.currentTarget.firstElementChild.className += " w3-dark-grey";
+}
+document.getElementById("myLink").click();
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBAiVbSV4gEASOD9rqnlm8n7U8zyE_X4Xc&callback=myMap"></script>
+<!--
+To use this code on your website, get a free API key from Google.
+Read more at: https://www.w3schools.com/graphics/google_maps_basic.asp
+-->
+
+</body>
+</html>
